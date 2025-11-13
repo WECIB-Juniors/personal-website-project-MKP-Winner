@@ -4,71 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MithunKarthick Parthiban - Personal Profile</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- ===== HEADER SECTION ===== -->
   <header>
-    <h1>MithunKarthick Parthiban</h1>
+    <h1 class="name">MithunKarthick Parthiban</h1>
+    <img src="profile.jpg" alt="Profile picture of MithunKarthick Parthiban" width="150">
     <p><strong>Email:</strong> <em>mail2mithunkarthick@gmail.com</em></p>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="interests.html">Interests</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
   </header>
 
-  <section id="profile">
-    <h2>Profile</h2>
-    <img src="profile.jpg" alt="Profile picture of MithunKarthick Parthiban" width="200">
-    <p><strong>Name:</strong> MithunKarthick Parthiban</p>
-    <p><strong>Email:</strong> <em>mail2mithunkarthick@gmail.com</em></p>
-    <p><strong>Social Media:</strong> 
-      <a href="https://www.linkedin.com/in/mithunkarthick-parthiban-409440302" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/MKP-Winner" target="_blank">GitHub</a>
-    </p>
-  </section>
-
-  <section id="bio">
-    <h2>Bio</h2>
-    <p>I am an aspiring web developer passionate about building creative and functional websites. My goal is to continually grow in the field of software development and make an impact through technology.</p>
-    <p>Throughout my studies and projects, I’ve developed a deep appreciation for design, usability, and the way code can bring ideas to life. I enjoy tackling complex problems and turning them into simple, elegant solutions.</p>
-    <p>My journey in web development was started because of a curiosity for me to learn to commit into excellence.</p>
-    <p>I am constantly seeking new challenges and opportunities to expand my skill set and contribute to meaningful projects.</p>
-    <p>In the future, I hope to contribute to projects that improve digital accessibility and empower people through innovative web applications.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <h3>Technical Skills</h3>
-    <ol>
-      <li>HTML & CSS</li>
-      <li>Networking</li>
-      <li>Machine Learning</li>
-      <li>Python Programming</li>
-      <li>Responsive Web Design</li>
-    </ol>
-
-    <h3>Non-Technical Skills</h3>
-    <ol>
-      <li>Team Collaboration</li>
-      <li>Problem-Solving Skills</li>
-      <li>Time Management</li>
-      <li>Adaptability & Flexibilty</li>
-      <li>Communication Skills</li>
-    </ol>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Portfolio Website:</strong> A personal website showcasing my projects and experience as a web developer. Built on Figma, this site demonstrates my ability to create responsive and user-friendly web interfaces. The project also helped me develop skills in web design principles and content organization.</li>
-      <li><strong>Vibe Coding Soccer Manager Mini-Simulator:</strong> This project is a simple, browser-based Soccer Manager Mini-Simulation designed to model match outcomes between various world-class football teams based on their rating. It includes dynamic commentary, a risk/reward substitution mini-game, a scoreboard, and integrated background music controlled by the user.</li>
-      <li><strong>Ecopulse Lite:</strong> This website is used to track small environmental actions and to show real-time impacts in your area. Users can log their daily eco-friendly activities such as recycling, using public transport, or reducing energy consumption. The platform visualizes the collective impact of these actions through interactive charts and provides personalized suggestions for more sustainable living.</li>
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
+  <!-- ===== MAIN FLEXBOX LAYOUT ===== -->
+  <main class="main-content">
+    <!-- LEFT COLUMN: SKILLS -->
+    <section class="column left" id="skills">
+      <h2>Skills</h2>
+      <h3>Technical Skills</h3>
+      <ol>
+        <li>HTML & CSS</li>
+        <li>Networking</li>
+        <li>Machine Learning</li>
+        <li>Python Programming</li>
+        <li>Responsive Web Design</li>
+      </ol>
+
+      <h3>Non-Technical Skills</h3>
+      <ol>
+        <li>Team Collaboration</li>
+        <li>Problem-Solving Skills</li>
+        <li>Time Management</li>
+        <li>Adaptability & Flexibility</li>
+        <li>Communication Skills</li>
+      </ol>
+    </section>
+
+    <!-- MIDDLE COLUMN: BIO -->
+    <section class="column middle" id="bio">
+      <h2>Bio</h2>
+      <p>I am an aspiring web developer passionate about building creative and functional websites. My goal is to continually grow in the field of software development and make an impact through technology.</p>
+      <p>Throughout my studies and projects, I’ve developed a deep appreciation for design, usability, and the way code can bring ideas to life. I enjoy tackling complex problems and turning them into simple, elegant solutions.</p>
+      <p>My journey in web development was started because of a curiosity for me to learn to commit into excellence.</p>
+      <p>I am constantly seeking new challenges and opportunities to expand my skill set and contribute to meaningful projects.</p>
+      <p>In the future, I hope to contribute to projects that improve digital accessibility and empower people through innovative web applications.</p>
+    </section>
+
+    <!-- RIGHT COLUMN: PROJECTS -->
+    <section class="column right" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> A personal website showcasing my projects and experience as a web developer. Built on Figma, this site demonstrates my ability to create responsive and user-friendly web interfaces. The project also helped me develop skills in web design principles and content organization.</li>
+        <li><strong>Vibe Coding Soccer Manager Mini-Simulator:</strong> This project is a simple, browser-based Soccer Manager Mini-Simulation designed to model match outcomes between various world-class football teams based on their rating. It includes dynamic commentary, a risk/reward substitution mini-game, a scoreboard, and integrated background music controlled by the user.</li>
+        <li><strong>Ecopulse Lite:</strong> This website is used to track small environmental actions and to show real-time impacts in your area. Users can log their daily eco-friendly activities such as recycling, using public transport, or reducing energy consumption. The platform visualizes the collective impact of these actions through interactive charts and provides personalized suggestions for more sustainable living.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>View more about my <a href="interests.html">Interests</a> or <a href="contact.html">Contact Me</a>.</p>
-    <p>&copy; 2025 MithunKarthick Parthiban</p>
+    <p>&copy; 2025, MithunKarthick Parthiban</p>
   </footer>
 </body>
 </html>
