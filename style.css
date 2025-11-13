@@ -1,14 +1,10 @@
-/* ================================
-   Personal Website Project Pt. 2
-   Author: MithunKarthick Parthiban
-   ================================ */
-
-/* Color Palette:
-Light Shades: #f9fafb;
-Light Accent: #d4a373;
-Main Brand Color: #457b9d;
-Dark Accent: #1d3557;
-Dark Shades: #0d1b2a;
+/*
+   New Color Palette Fall 2025
+   Light Shade:   #EEF1EE
+   Tan Accent:    #8D816B
+   Medium Gray:   #898C90
+   Deep Mauve:    #7A5C5C
+   Blue-Gray:     #3A414D
 */
 
 * {
@@ -17,64 +13,67 @@ Dark Shades: #0d1b2a;
   padding: 0;
 }
 
-/* Global Styles */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f9fafb;
-  color: #1d3557;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(to bottom right, #EEF1EE, #8D816B, #898C90);
+  color: #3A414D;
   line-height: 1.6;
   padding: 20px;
+  min-height: 100vh;
 }
 
-/* Header Section */
 header {
-  background-color: #457b9d;
-  color: #f9fafb;
   text-align: center;
-  padding: 20px;
+  background-color: #8D816B;
+  color: #EEF1EE;
+  padding: 25px 10px;
   border-radius: 12px;
   margin-bottom: 20px;
-}
-
-.name {
-  color: #f9fafb;
-  font-size: 2rem;
-  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header img {
   display: inline-block;
-  width: 120px;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
   border-radius: 50%;
   margin-top: 10px;
+  border: 4px solid #898C90;
 }
 
-/* Navigation Bar */
+.name {
+  font-size: 2rem;
+  color: #EEF1EE;
+  margin-bottom: 10px;
+}
+
 nav ul.navbar {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  background-color: #1d3557;
-  padding: 10px 0;
-  margin-top: 10px;
+  background-color: #3A414D;
+  padding: 12px 0;
   border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul.navbar li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul.navbar a {
-  color: #f9fafb;
+  color: #EEF1EE;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav ul.navbar a:hover {
-  color: #d4a373;
+  color: #8D816B;
 }
 
-/* 3-Column Layout */
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -84,52 +83,81 @@ nav ul.navbar a:hover {
 
 .column {
   flex: 1;
-  min-width: 250px;
-  padding: 15px;
+  min-width: 260px;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .left {
-  background-color: #1d3557;
-  color: #f9fafb;
+  background-color: rgba(58, 65, 77, 0.82);    /* Semi-transparent Blue-Gray */
+  color: #EEF1EE;
 }
 
 .middle {
-  background-color: #f9fafb;
-  color: #0d1b2a;
+  background-color: rgba(238, 241, 238, 0.92); /* Semi-transparent Light Shade */
+  color: #3A414D;
   flex: 2;
 }
 
 .right {
-  background-color: #1d3557;
-  color: #f9fafb;
+  background-color: rgba(58, 65, 77, 0.82);    /* Semi-transparent Blue-Gray */
+  color: #EEF1EE;
 }
 
-/* Sections */
-section h2 {
-  color: #457b9d;
+h2 {
+  color: #7A5C5C;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-ol, ul {
+.left h2,
+.right h2 {
+  color: #8D816B;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #8D816B;
+}
+
+ol,
+ul {
   margin-left: 20px;
   margin-bottom: 15px;
 }
 
-strong {
-  color: #d4a373;
+li {
+  margin-bottom: 8px;
 }
 
-/* Footer */
+strong {
+  color: #8D816B;
+}
+
+em {
+  color: #7A5C5C;
+}
+
 footer {
-  background-color: #0d1b2a;
-  color: #f9fafb;
+  background-color: #898C90;
+  color: #EEF1EE;
   text-align: center;
   padding: 15px;
   border-radius: 12px;
+  font-size: 0.9rem;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+footer a {
+  color: #7A5C5C;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
@@ -141,6 +169,11 @@ footer {
   }
 
   header img {
-    width: 90px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.5rem;
   }
 }
